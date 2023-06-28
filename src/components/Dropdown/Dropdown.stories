@@ -1,0 +1,18 @@
+import React from 'react';
+import { Meta, StoryObj } from "@storybook/react";
+import Dropdown from './Dropdown';
+
+const meta: Meta = {
+  component: Dropdown,
+  title: "Marbella/Dropdown",
+  argTypes: {},
+};
+
+export default meta;
+
+type Story = StoryObj<typeof Dropdown>;
+
+export const Default: Story = (args) => <Dropdown {...args} />;
+Default.args = {
+ options: ['Option 1', 'Option 2', 'Option 3'],
+};
